@@ -1,0 +1,8 @@
+extend layout
+
+block content
+    h2 Welcome, student!
+    form(action='/hello', method='POST')
+        label Please Enter Your Name:
+            input(type='text', name='username')
+        button(type='submit') Submit
